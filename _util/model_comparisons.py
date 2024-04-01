@@ -22,7 +22,7 @@ def get_metrics_score(preds, sample_dict, print_flag=False, validation=False):
     # defining an empty list to store train and test results
     score_list = []
     pred_train = preds["pred_train"]
-    if validation:
+    if validation is True:
         pred_test = preds["pred_val"]
         sample_test = sample_dict["y_val"]
     else:
@@ -112,8 +112,11 @@ def model_comparisons(models_dict, sample_dict, validation=False):
     f1_test = []
 
     # looping through all the models to get the metrics score - Accuracy, Recall and Precision
-    for preds in models:
-        j = get_metrics_score(preds, sample_dict, print_flag=False, validation=validation)
+    for l in labels:
+        if validation is True:
+            j = get_metrics_score(models_dict[l], sample_dict, print_flag=False, validation=models_dict[l]["validation"])
+        else:
+            j = get_metrics_score(models_dict[l], sample_dict, print_flag=False, validation=models_dict[l]["validation"])
         acc_train.append(j[0])
         acc_test.append(j[1])
         recall_train.append(j[2])
