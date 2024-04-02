@@ -159,14 +159,31 @@ Which products were ordered and in what order they're added to the cart, as well
 
 ## Segmentation
 
+Customer segmentation is a strategic approach to divide a customer base into distinct groups that share similar characteristics, allowing for targeted marketing strategies and personalized customer experiences. By understanding the purchase behaviors and product preferences of these groups, businesses can tailor their offerings to meet the specific needs and desires of each segment.
+
+To handle the complexity of thousands of products and customers, product categories, represented by aisles, serve as a practical proxy for detailed segmentation. This categorization simplifies the segmentation process without losing the granularity needed for effective personalization.
+
+The refined segmentation strategy leveraged here can enable a companto to engage with their customers more effectively, crafting marketing campaigns and product development that resonate with the distinct purchasing patterns identified through this data-driven approach.
+
 <p align="center">
   <img width="500" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/elbow.png?raw=true">
 </p>
 
+The Elbow Method is a technique used to determine the appropriate number of clusters by plotting the explained variance against the number of clusters and identifying the point where the increase in variance explained by additional clusters diminishes, often referred to as the "elbow." In this analysis, five clusters were identified as optimal, suggesting a clear distinction among different customer purchasing behaviors.
 
 <p align="center">
   <img width="500" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/clustering.png?raw=true">
 </p>
+
+Principal Component Analysis (PCA) is leveraged to condense the high-dimensional data into a more manageable form, addressing the challenge that KMeans clustering faces in higher-dimensional spaces. By transforming the data into 10 principal components, the most significant variance is captured, facilitating more accurate clustering.
+
+Finally, the clustering results into 5 neat clusters and after checking most frequent products in them, we can conclude following:
+
+- Cluster 1 includes 55356 consumers who exhibit preferences for fresh vegetables followed by fruits.
+- Cluster 2 includes 5369 consumers who exhibit preferences for water seltzer sparkling water aisle.
+- Cluster 3 includes 38887 consumers who exhibit preferences for fruits followed and fresh vegetables.
+- Cluster 4 includes 98639 consumers who don't exhibit clear preferences for any category. Their average orders are relatively low, so either they don't use Instacart regularly or they are new. 
+- Cluster 5 includes 7958 consumers  who exhibit preferences for packaged produce and fresh fruits.
 
 
 ## Basket Analysis Results
