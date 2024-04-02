@@ -15,16 +15,44 @@ The Instacart Market Basket Analysis is focused on understanding customer purcha
 ## Project Structure
 ```
 .
-├── _plts/                                      : Data visualization 
-├── 1) EDA
-├── 2) D             : EDA to analyze customer purchase pattern
-├── Customers Segmentation.ipynb                : Customer Segmentation based on product aisles
-├── Market Basket Analysis.ipynb                : Market Basket Analysis to find products association
-├── Feature Extraction.ipynb                    : Feature engineering and extraction for a ML model
-├── Data Preparation.ipynb                      : Data preparation for modeling
-├── ANN Model.ipynb                             : Neural Network model for product reorder prediction
-├── XGBoost Model.ipynb                         : XGBoost model for product reorder prediction
-├── LICENSE                                     : License
-└── README.md                                   : Project Report 
+├── _plts/                            : Data visualization 
+├── _util/                            : Various project utilities 
+├── 1) EDA.ipynb                      : EDA to analyze customer purchase pattern
+├── 2) Segmentation Analysis.ipynb    : Aisle driven customer segmentation
+├── 3) Feature Engineering.ipynb      : Feature engineering for ML
+├── 4) Finalize DataPrep.ipynb        : Clean up data for modeling
+├── 5) Basket Analysis.ipynb          : Final basket analysis
+└── README.md                         : Project Report 
 ```
 <br />
+
+## EDA Highlights
+
+#### aisles
+
+*134* distinct aisles commonly observed in retail grocers including, but not limited to:
+- prepared soups salads
+- specialty cheeses
+- energy granola bars
+- instant foods
+- marinades meat preparation
+
+#### departments
+
+*21* unique departments commonly observed in retail grocers including but not limited to:
+- frozen
+- other
+- bakery
+- produce
+- alcohol
+
+#### orders
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/high_vol_products_by_dow.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/orders_by_dow_and_hour_of_day.png?raw=true">
+</p>
+
