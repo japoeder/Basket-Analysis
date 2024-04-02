@@ -59,9 +59,6 @@ Data on 49688 products and relevant dimensionality including aisle and departmen
 - Large Lemon 
 
 
-- Customers order once in a week which is supported by peaks at 7, 14, 21 and 30 in 'Orders VS Days since prior order' graph.
-- Based on the heatmap between 'Day of Week' and 'Hour of Day,' we can say that Saturday afternoons and Sunday mornings are prime time for orders.
-
 <p align="center">
   <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/high_vol_products_by_dow.png?raw=true">
 </p>
@@ -83,6 +80,14 @@ Data on 49688 products and relevant dimensionality including aisle and departmen
 <p align="center">
   <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/cart_item_count_distribution.png?raw=true">
 </p>
+
+- Frequency distribution of cart item count is highly right skewed, but comports with intuition.  Most carts can pass through the 20 item or less aisle.
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/days_since_prior_order.png?raw=true">
+</p>
+
+- Purchase cycle surfaces in 'Days Since Prior Order' graph with bumps at 7, 14, 21 and 30.
 
 <p align="center">
   <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Order Counts x Aisle.png?raw=true">
