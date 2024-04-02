@@ -82,9 +82,40 @@ The Instacart Market Basket Analysis is focused on understanding customer purcha
 </p>
 
 <p align="center">
-  <img width="350" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Organic vs Inorganic Counts.png?raw=true">
-  <img width="350" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Organic vs Inorganic Reorders.png?raw=true">
+  <img width="350" height="150" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Organic vs Inorganic Counts.png?raw=true">
+  <img width="350" height="150" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Organic vs Inorganic Reorders.png?raw=true">
 </p>
+
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Top Products.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Cart Add + Ordered x Reorder Ratio.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Reorder % x Total Orders.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/high_vol_prod_x_dow.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Unique Customers x Product.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/elbow.png?raw=true">
+</p>
+
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/clustering.png?raw=true">
+</p>
+
 
 
 
