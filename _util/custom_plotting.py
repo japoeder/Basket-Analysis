@@ -64,6 +64,7 @@ def horizontal_bar(series
                    , x_label=None
                    , y_label=None
                    , title=None
+                   , color=None
                    , save_as=None):
 
     # Abstract input
@@ -99,7 +100,7 @@ def horizontal_bar(series
     if xdim is not None:
         x = x.tail(xdim)
 
-    ax = x.plot(kind='barh', figsize=figsize, color='#86bf91', zorder=2, width=0.85)
+    ax = x.plot(kind='barh', figsize=figsize, color=color, zorder=2, width=0.85)
 
     # Rotate y-axis labels
     for label in ax.get_yticklabels():
