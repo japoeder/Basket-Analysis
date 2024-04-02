@@ -39,7 +39,16 @@ def histogram_boxplot(data, x=None, hue=None, figsize=(15,5), bins=None, xlabel 
     if xlim:
         ax2.set_xlim(xlim)
 
-def horizontal_bar(series, avg_col=None, xdim=None, figsize=(12, 4), bins=10, sort_by='y', x_label=None, y_label=None, title=None):
+def horizontal_bar(series
+                   , avg_col=None
+                   , xdim=None
+                   , figsize=(12, 4)
+                   , bins=10
+                   , sort_by='y'
+                   , x_label=None
+                   , y_label=None
+                   , title=None
+                   , save_as=None):
 
     # Abstract input
     in_df = pd.DataFrame(series)
@@ -106,6 +115,10 @@ def horizontal_bar(series, avg_col=None, xdim=None, figsize=(12, 4), bins=10, so
 
     # Format y-axis label
     ax.xaxis.set_major_formatter(StrMethodFormatter('{x:,g}'))
+
+    # Save the figure
+    if save_as:
+        plt.savefig(save_as)
 
 def heatmap(data=None, figsize=(12,7), title=None, x_label=None, y_label=None):
     ax = plt.subplots(figsize=figsize)
@@ -186,7 +199,16 @@ def corr_heatmap(data="in_df", num_cols="cols"):
     ax.set_yticklabels(data.columns)
     return plt.show()
 
-def horizontal_catplot(data, x, y, hue=None, color=None, x_label=None, y_label=None, title=None, figsize=(12, 4), save_as=None):
+def horizontal_catplot(data
+                       , x
+                       , y
+                       , hue=None
+                       , color=None
+                       , x_label=None
+                       , y_label=None
+                       , title=None
+                       , figsize=(12, 4)
+                       , save_as=None):
 
     # Create a seaborn catplot
     g = sns.catplot(x=x, y=y, hue=hue, data=data, kind="bar", palette=color, height=figsize[1], aspect=figsize[0]/figsize[1], orient='h')
