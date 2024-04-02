@@ -24,7 +24,6 @@ The Instacart Market Basket Analysis is focused on understanding customer purcha
 ├── 5) Basket Analysis.ipynb          : Final basket analysis
 └── README.md                         : Project Report 
 ```
-<br />
 
 ## EDA Highlights
 
