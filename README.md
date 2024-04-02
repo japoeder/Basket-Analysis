@@ -84,7 +84,7 @@ Data on 49688 products and relevant dimensionality including aisle and departmen
 - Frequency distribution of cart item count is highly right skewed, but comports with intuition.  Most carts can pass through the 20 item or less aisle.
 
 <p align="center">
-  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/days_since_prior_order.png?raw=true">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/days_since_prior_order_dist.png?raw=true">
 </p>
 
 - Purchase cycle surfaces in 'Days Since Prior Order' graph with bumps at 7, 14, 21 and 30.
