@@ -96,7 +96,7 @@ The Instacart Market Basket Analysis is focused on understanding customer purcha
 </p>
 
 <p align="center">
-  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Reorder % x Total Orders.png?raw=true">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/reorder_pct_x_total_orders.png?raw=true">
 </p>
 
 <p align="center">
@@ -104,7 +104,7 @@ The Instacart Market Basket Analysis is focused on understanding customer purcha
 </p>
 
 <p align="center">
-  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Unique Customers x Product.png?raw=true">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/unique_cust_x_prod.png?raw=true">
 </p>
 
 <p align="center">
