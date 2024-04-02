@@ -56,3 +56,26 @@ The Instacart Market Basket Analysis is focused on understanding customer purcha
   <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/orders_by_dow_and_hour_of_day.png?raw=true">
 </p>
 
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/order_count_distribution.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/cart_item_count_distribution.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/Order Counts x Aisle.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/highest_20_aisles_reorder_ratio.png?raw=true">
+</p>
+
+<p align="center">
+  <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/lowest_20_aisles_reorder_ratio.png?raw=true">
+</p>
+
+
+
+
