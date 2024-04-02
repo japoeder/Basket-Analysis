@@ -47,17 +47,38 @@ The Instacart Market Basket Analysis is focused on understanding customer purcha
 
 #### orders
 
+Order level data with various dimensionality for product, department, etc. There are total 3421083 orders made by total 206209 users.
+
+#### products
+
+Data on 49688 products and relevant dimensionality including aisle and department. Commonly observed products in the set include:
+- Banana
+- Bag of Organic Bananas
+- Organic Strawberries
+- Organic Baby Spinach
+- Large Lemon 
+
+
+- Customers order once in a week which is supported by peaks at 7, 14, 21 and 30 in 'Orders VS Days since prior order' graph.
+- Based on the heatmap between 'Day of Week' and 'Hour of Day,' we can say that Saturday afternoons and Sunday mornings are prime time for orders.
+
 <p align="center">
   <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/high_vol_products_by_dow.png?raw=true">
 </p>
+
+- 0 and 1 appear to represent Saturday and Sunday, respectively, which is consistent with intuition.
 
 <p align="center">
   <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/orders_by_dow_and_hour_of_day.png?raw=true">
 </p>
 
+- Time of day consistent with intuition as well, with the the bulk of shopping done from 9am to 4pm (highest on weekends)
+
 <p align="center">
   <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/order_count_distribution.png?raw=true">
 </p>
+
+- Orders per customer ranges from 0 to 100, probably truncated at max.
 
 <p align="center">
   <img width="700" height="200" src="https://github.com/japoeder/Basket-Analysis/blob/master/_plts/cart_item_count_distribution.png?raw=true">
