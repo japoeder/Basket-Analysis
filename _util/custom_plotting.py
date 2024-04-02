@@ -6,7 +6,20 @@ from matplotlib.ticker import StrMethodFormatter
 import warnings
 warnings.filterwarnings('ignore')
 
-def histogram_boxplot(data, x=None, hue=None, figsize=(15,5), bins=None, xlabel = None, title = None, font_size=12, hist=True, kde=False, boxplot=True, use_pct=False, xlim=None):
+def histogram_boxplot(data
+                      , x=None
+                      , hue=None
+                      , figsize=(15,5)
+                      , bins=None
+                      , xlabel = None
+                      , title = None
+                      , font_size=12
+                      , hist=True
+                      , kde=False
+                      , boxplot=True
+                      , use_pct=False
+                      , xlim=None
+                      , save_as=None):
 
     # Create a figure with one or two subplots depending on boxplot
     if boxplot:
@@ -38,6 +51,9 @@ def histogram_boxplot(data, x=None, hue=None, figsize=(15,5), bins=None, xlabel 
     # Set x limits
     if xlim:
         ax2.set_xlim(xlim)
+
+    if save_as:
+        plt.savefig(save_as)
 
 def horizontal_bar(series
                    , avg_col=None
@@ -120,7 +136,12 @@ def horizontal_bar(series
     if save_as:
         plt.savefig(save_as)
 
-def heatmap(data=None, figsize=(12,7), title=None, x_label=None, y_label=None):
+def heatmap(data=None
+            , figsize=(12,7)
+            , title=None
+            , x_label=None
+            , y_label=None
+            , save_as=None):
     ax = plt.subplots(figsize=figsize)
     ax = sns.heatmap(data, cmap="blues", linewidths=.5)
     ax.set_title(title, size = 12)
@@ -130,9 +151,24 @@ def heatmap(data=None, figsize=(12,7), title=None, x_label=None, y_label=None):
     cbar = ax.collections[0].colorbar
     cbar.ax.tick_params(labelsize=10)
     fig = ax.get_figure()
+    if save_as:
+        fig.savefig(save_as)
     plt.show()
 
-def heatmap_boxplot(data, x=None, y=None, hue=None, figsize=(12,7), bins=None, xlabel = None, title = None, font_size=12, hist=True, kde=None, boxplot=True, boxplot_axis=None):
+def heatmap_boxplot(data
+                    , x=None
+                    , y=None
+                    , hue=None
+                    , figsize=(12,7)
+                    , bins=None
+                    , xlabel = None
+                    , title = None
+                    , font_size=12
+                    , hist=True
+                    , kde=None
+                    , boxplot=True
+                    , boxplot_axis=None
+                    , save_as=None):
 
     # If y is specified, set kde to False
     if y is not None and kde is None:
@@ -162,7 +198,20 @@ def heatmap_boxplot(data, x=None, y=None, hue=None, figsize=(12,7), bins=None, x
     if title:
         ax1.set_title(title, fontsize=font_size)
 
-def simple_bar(data, x, y, figsize=(12,7), xlabel=None, ylabel=None, title=None, sort_by=None, palette='Blues', n=5):
+    if save_as:
+        plt.savefig(save_as)
+
+def simple_bar(data
+               , x
+               , y
+               , figsize=(12,7)
+               , xlabel=None
+               , ylabel=None
+               , title=None
+               , sort_by=None
+               , palette='Blues'
+               , n=5
+               , save_as=None):
     # Sort data if sort_by is specified
     if sort_by:
         data = data.sort_values(sort_by)
@@ -183,9 +232,12 @@ def simple_bar(data, x, y, figsize=(12,7), xlabel=None, ylabel=None, title=None,
     if title:
         plt.title(title)
 
+    if save_as:
+        plt.savefig(save_as)
+
     plt.show()
 
-def corr_heatmap(data="in_df", num_cols="cols"):
+def corr_heatmap(data="in_df", num_cols="cols", save_as=None):
     corr = data[num_cols].corr()
     fig = plt.figure(figsize=(12, 12))
     ax = fig.add_subplot(111)
@@ -197,6 +249,8 @@ def corr_heatmap(data="in_df", num_cols="cols"):
     ax.set_yticks(ticks)
     ax.set_xticklabels(data.columns)
     ax.set_yticklabels(data.columns)
+    if save_as:
+        plt.savefig(save_as)
     return plt.show()
 
 def horizontal_catplot(data
@@ -224,7 +278,12 @@ def horizontal_catplot(data
     if save_as:
         g.savefig(save_as)
 
-def simple_heatmap(data=None, figsize=(12,7), title=None, x_label=None, y_label=None):
+def simple_heatmap(data=None
+                   , figsize=(12,7)
+                   , title=None
+                   , x_label=None
+                   , y_label=None
+                   , save_as=None):
     ax = plt.subplots(figsize=figsize)
     ax = sns.heatmap(data, cmap="Blues", linewidths=.5)
     ax.set_title(title, size = 12)
@@ -234,4 +293,6 @@ def simple_heatmap(data=None, figsize=(12,7), title=None, x_label=None, y_label=
     cbar = ax.collections[0].colorbar
     cbar.ax.tick_params(labelsize=10)
     fig = ax.get_figure()
+    if save_as:
+        fig.savefig(save_as)
     plt.show()
